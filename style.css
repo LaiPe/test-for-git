@@ -3,6 +3,7 @@
     background-color: var(--couleur-claire);
     --couleur-foncé: #143b7e;
     --couleur-claire: #6c96df;
+    --couleur-très-foncé: #011b49;
 }
 body{
     margin: 0;padding: 0;
@@ -23,6 +24,27 @@ header::after{
     bottom: -50px; right: 0; left: 0;
     background-color: var(--couleur-foncé);
     border-bottom-left-radius: 50px; border-bottom-right-radius: 50px;
+}
+header nav{
+    position: fixed;
+    background-color: var(--couleur-très-foncé);
+    top: 0; right: 0; left: 0;
+}
+header nav h1{
+    text-align: left;
+    margin: 20px;
+}
+header nav ul{
+    position: absolute;
+    bottom: 0;right: 0;left: 0;
+    text-align: right;
+    margin-right: 20px;
+}
+header nav li{
+    display: inline;
+    margin: 0px 10px;
+    color: white;
+    font-weight: bold;
 }
 
 main{
