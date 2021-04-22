@@ -4,12 +4,7 @@
 header{
     border-bottom: 1px solid black;
     color: blue;
-    position: relative;
 }
 header h1{
     text-align: center;
-}
-header time{
-    position: absolute;
-    right:0; bottom:0;
 }
