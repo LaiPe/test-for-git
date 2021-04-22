@@ -1,5 +1,8 @@
 :root{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--couleur-claire);
+    --couleur-foncé: #143b7e;
+    --couleur-claire: #6c96df;
 }
 body{
     margin: 0;padding: 0;
@@ -7,8 +10,21 @@ body{
 header{
     padding: 42.5vh 0;
     text-align: center;
-    background-color: #325288;
+    background-color: var(--couleur-foncé);
 }
 header h1{
     font-size: 6vh;
+    color: rgb(255, 255, 255);
+}
+header::after{
+    content:"";
+    position: absolute;
+    height: 50px;
+    bottom: -50px; right: 0; left: 0;
+    background-color: var(--couleur-foncé);
+    border-bottom-left-radius: 50px; border-bottom-right-radius: 50px;
+}
+
+main{
+    padding: 80px;
 }
